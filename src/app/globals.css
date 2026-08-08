@@ -5,22 +5,34 @@
 }
 
 :root {
-  background-color: #0000FF;
-  color: #FFFFFF;
+  background-color: #0000ff;
+  color: #ffffff;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
+  background-color: #0000ff;
   overscroll-behavior: none;
-  background-color: #0000FF;
 }
 
 @keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 
 .blink {
   animation: blink 1s step-end infinite;
+}
+
+@media (max-width: 639px) {
+  .disable-transform-on-mobile {
+    transform: none !important;
+  }
 }
