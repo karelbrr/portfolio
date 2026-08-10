@@ -2,6 +2,7 @@
 
 @theme inline {
   --font-serif: var(--font-eb-garamond);
+  --breakpoint-2xl: 2000px;
 }
 
 :root {
@@ -31,7 +32,7 @@ body {
   animation: blink 1s step-end infinite;
 }
 
-@media (max-width: 639px) {
+@media (max-width: 1279px) {
   .disable-transform-on-mobile {
     transform: none !important;
   }

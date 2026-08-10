@@ -54,9 +54,9 @@ export default function ScrollManager() {
       <section
         id="scroll-container"
         ref={containerRef}
-        className="h-auto lg:h-[1200vh] w-full relative"
+        className="h-auto xl:h-[1200vh] w-full relative"
       >
-        <div className="relative lg:sticky top-0 h-auto lg:h-screen w-full overflow-x-hidden lg:overflow-hidden flex flex-col">
+        <div className="relative xl:sticky top-0 h-auto xl:h-screen w-full overflow-x-hidden xl:overflow-hidden flex flex-col">
           <Hero />
           <Projects
             horizontalProgress={horizontalProgress}
