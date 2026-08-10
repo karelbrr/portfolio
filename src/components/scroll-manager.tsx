@@ -51,8 +51,12 @@ export default function ScrollManager() {
   return (
     <main className="w-full bg-[#0000FF] text-white font-serif selection:bg-[#ffb300] selection:text-[#0000FF]">
       {/* SINGLE STICKY SCROLL CONTAINER */}
-      <section ref={containerRef} className="h-auto sm:h-[1000vh] w-full relative">
-        <div className="relative sm:sticky top-0 h-auto sm:h-screen w-full overflow-x-hidden sm:overflow-hidden flex flex-col">
+      <section
+        id="scroll-container"
+        ref={containerRef}
+        className="h-auto lg:h-[1200vh] w-full relative"
+      >
+        <div className="relative lg:sticky top-0 h-auto lg:h-screen w-full overflow-x-hidden lg:overflow-hidden flex flex-col">
           <Hero />
           <Projects
             horizontalProgress={horizontalProgress}
