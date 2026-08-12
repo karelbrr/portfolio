@@ -58,7 +58,7 @@ function GithubReadme({
         });
       })
       .then((text) => setReadme(text))
-      .catch((err) => console.error(`Failed to fetch README for ${repo}:`, err))
+      .catch((err) => console.warn(`Failed to fetch README for ${repo}:`, err))
       .finally(() => setLoading(false));
   }, [repo]);
 
@@ -91,7 +91,7 @@ export default function Projects({
     <div className="relative xl:absolute xl:inset-0 z-20 pointer-events-none xl:pointer-events-none overflow-hidden flex xl:justify-end">
       {/* Phase 1: Horizontal Translation of the split-screen panel */}
       <div
-        className="w-full xl:w-[75vw] h-auto xl:h-full bg-[#0000FF] pointer-events-auto xl:border-l xl:border-white/20 shadow-none xl:shadow-2xl flex flex-col xl:flex-row disable-transform-on-mobile transition-transform duration-400 ease-out"
+        className="w-full xl:w-[75vw] h-auto xl:h-full bg-[#0000FF] pointer-events-auto xl:border-l xl:border-white/20 shadow-none xl:shadow-2xl flex flex-col xl:flex-row disable-transform-on-mobile"
         style={{
           transform: `translateX(${(1 - horizontalProgress) * 100}vw)`,
         }}
@@ -113,7 +113,7 @@ export default function Projects({
         {/* Right Half of Panel: Phase 2 Vertical Translation */}
         <div className="w-full xl:w-[60%] h-auto xl:h-screen relative xl:overflow-hidden">
           <div
-            className="flex flex-col items-center xl:items-start w-full h-auto xl:h-max xl:min-h-screen p-6 lg:p-12 py-12 xl:pt-[10vh] xl:pb-[3vh] space-y-16 xl:space-y-32 disable-transform-on-mobile transition-transform duration-400 ease-out"
+            className="flex flex-col items-start w-full h-auto xl:h-max xl:min-h-screen p-6 sm:p-12 py-12 xl:pt-[10vh] xl:pb-[3vh] space-y-16 xl:space-y-32 disable-transform-on-mobile"
             style={{
               transform: `translateY(calc(-${verticalProgress} * (100% - 100vh)))`,
             }}
@@ -140,7 +140,7 @@ export default function Projects({
                 return (
                   <div
                     key={project.id}
-                    className="group flex flex-col space-y-6 w-full max-w-2xl 2xl:max-w-5xl"
+                    className="group flex flex-col space-y-6 w-full xl:max-w-2xl 2xl:max-w-5xl"
                   >
                     <a
                       href={project.html_url}
@@ -149,7 +149,7 @@ export default function Projects({
                       className="w-full h-[50vh] sm:h-[70vh] lg:h-[50vh] xl:h-[70vh] 2xl:h-[60vh] bg-white/5 hover:bg-white/10 transition-colors border border-white/10 relative overflow-hidden flex flex-col p-6 sm:p-8 cursor-pointer group"
                     >
                       {/* Raw README Text */}
-                      <pre className="font-mono text-sm sm:text-base 2xl:text-lg text-white/50 group-hover:text-white/80 transition-colors whitespace-pre-wrap text-left w-full h-full">
+                      <pre className="font-mono text-sm sm:text-base 2xl:text-lg text-white/50 group-hover:text-white/80 transition-colors whitespace-pre-wrap text-left w-full h-full [mask-image:linear-gradient(to_bottom,black_calc(100%-4rem),transparent_100%)]">
                         <code>
                           <GithubReadme
                             repo={project.name}
@@ -158,8 +158,13 @@ export default function Projects({
                         </code>
                       </pre>
 
+                      {/* Label indicating it continues on github */}
+                      <span className="absolute bottom-4 left-6 sm:left-8 opacity-50 tracking-tighter lowercase group-hover:opacity-100 transition-opacity italic">
+                        ...continue reading on github
+                      </span>
+
                       {/* Watermark of the file name in the bottom right corner */}
-                      <span className="absolute bottom-4 right-6 opacity-30 tracking-tighter lowercase group-hover:opacity-100 transition-opacity">
+                      <span className="absolute bottom-4 right-6 sm:right-8 opacity-50 tracking-tighter lowercase group-hover:opacity-100 transition-opacity">
                         {pseudoName}
                       </span>
                     </a>

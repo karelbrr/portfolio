@@ -7,7 +7,7 @@ export default function Contact({ contactHorizontalProgress }: ContactProps) {
     <div className="relative xl:absolute xl:inset-0 z-30 pointer-events-none overflow-hidden flex xl:justify-end">
       {/* Phase 3: Horizontal Translation of the contact panel */}
       <div
-        className="w-full xl:w-[70vw] h-auto xl:h-full bg-[#0000FF] pointer-events-auto xl:border-l xl:border-white/20 shadow-none xl:shadow-2xl flex flex-col xl:flex-row disable-transform-on-mobile xl:mt-0 transition-transform duration-400 ease-out"
+        className="w-full xl:w-[70vw] h-auto xl:h-full bg-[#0000FF] pointer-events-auto xl:border-l xl:border-white/20 shadow-none xl:shadow-2xl flex flex-col xl:flex-row disable-transform-on-mobile xl:mt-0"
         style={{
           transform: `translateX(${(1 - contactHorizontalProgress) * 100}vw)`,
         }}
@@ -22,30 +22,30 @@ export default function Contact({ contactHorizontalProgress }: ContactProps) {
 
           <a
             href="mailto:karelbr7@gmail.com"
-            className="text-3xl sm:text-5xl italic px-6 text-white tracking-tighter lowercase hover:underline underline-offset-8"
+            className="text-3xl sm:text-5xl italic px-6 sm:px-12 text-white tracking-tighter lowercase hover:underline underline-offset-8"
           >
             karelbr7@gmail.com
           </a>
 
-          <div className="flex flex-col space-y-6 pt-4 text-2xl sm:text-4xl px-6 text-white tracking-tighter lowercase">
+          <div className="flex flex-col space-y-6 pt-4 text-2xl sm:text-4xl px-6 sm:px-12 text-white tracking-tighter lowercase">
             <a
               target="_blank"
               href="https://www.instagram.com/karelbraborec/"
-              className="hover:opacity-70 transition-opacity w-fit"
+              className="hover:underline underline-offset-8 w-fit"
             >
               instagram
             </a>
             <a
               target="_blank"
               href="https://github.com/karelbrr"
-              className="hover:opacity-70 transition-opacity w-fit"
+              className="hover:underline underline-offset-8 w-fit"
             >
               github
             </a>
             <a
               target="_blank"
               href="https://www.linkedin.com/in/karel-braborec-1943083a4/"
-              className="hover:opacity-70 mb-10 transition-opacity w-fit"
+              className="hover:underline underline-offset-8 mb-10 w-fit"
             >
               linkedin
             </a>
@@ -73,21 +73,21 @@ export default function Contact({ contactHorizontalProgress }: ContactProps) {
             <a
               target="_blank"
               href="https://www.instagram.com/karelbraborec/"
-              className="hover:opacity-70 transition-opacity w-fit"
+              className="hover:underline underline-offset-8 w-fit"
             >
               instagram
             </a>
             <a
               target="_blank"
               href="https://github.com/karelbrr"
-              className="hover:opacity-70 transition-opacity w-fit"
+              className="hover:underline underline-offset-8 w-fit"
             >
               github
             </a>
             <a
               target="_blank"
               href="https://www.linkedin.com/in/karel-braborec-1943083a4/"
-              className="hover:opacity-70 transition-opacity w-fit"
+              className="hover:underline underline-offset-8 w-fit"
             >
               linkedin
             </a>
