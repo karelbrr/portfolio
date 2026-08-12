@@ -149,7 +149,7 @@ export default function Projects({
                       className="w-full h-[50vh] sm:h-[70vh] lg:h-[50vh] xl:h-[70vh] 2xl:h-[60vh] bg-white/5 hover:bg-white/10 transition-colors border border-white/10 relative overflow-hidden flex flex-col p-6 sm:p-8 cursor-pointer group"
                     >
                       {/* Raw README Text */}
-                      <pre className="font-mono text-sm sm:text-base 2xl:text-lg text-white/50 group-hover:text-white/80 transition-colors whitespace-pre-wrap text-left w-full h-full [mask-image:linear-gradient(to_bottom,black_calc(100%-4rem),transparent_100%)]">
+                      <pre className="font-mono text-sm sm:text-base 2xl:text-lg text-white/50 group-hover:text-white/80 transition-colors whitespace-pre-wrap text-left w-full h-full mask-[linear-gradient(to_bottom,black_calc(100%-4rem),transparent_100%)]">
                         <code>
                           <GithubReadme
                             repo={project.name}
