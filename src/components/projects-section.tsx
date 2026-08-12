@@ -91,7 +91,7 @@ export default function Projects({
     <div className="relative xl:absolute xl:inset-0 z-20 pointer-events-none xl:pointer-events-none overflow-hidden flex xl:justify-end">
       {/* Phase 1: Horizontal Translation of the split-screen panel */}
       <div
-        className="w-full xl:w-[75vw] h-auto xl:h-full bg-[#0000FF] pointer-events-auto xl:border-l xl:border-white/20 shadow-none xl:shadow-2xl flex flex-col xl:flex-row disable-transform-on-mobile"
+        className="w-full xl:w-[75vw] 2xl:w-full h-auto xl:h-full bg-[#0000FF] pointer-events-auto xl:border-l xl:border-white/20 shadow-none xl:shadow-2xl flex flex-col xl:flex-row disable-transform-on-mobile"
         style={{
           transform: `translateX(${(1 - horizontalProgress) * 100}vw)`,
         }}
@@ -100,11 +100,11 @@ export default function Projects({
         <div className="xl:hidden w-full bg-[#0D0DFF] py-12 flex items-center justify-center border-t border-b border-white/20 mt-12">
           <h2 className="text-6xl italic text-white tracking-tighter lowercase">
             projects
-          </h2>
+           </h2>
         </div>
 
         {/* Left Half of Panel: Sticky Heading */}
-        <div className="hidden xl:flex w-[40%] bg-[#0D0DFF] h-screen items-center justify-center relative border-r border-white/20">
+        <div className="hidden xl:flex xl:w-[40%] bg-[#0D0DFF] h-screen items-center justify-center relative border-r border-white/20">
           <h2 className="text-6xl italic sm:text-8xl text-white lg:text-7xl xl:text-[8rem] 2xl:text-[12rem] tracking-tighter lowercase absolute z-10">
             projects
           </h2>
@@ -140,7 +140,7 @@ export default function Projects({
                 return (
                   <div
                     key={project.id}
-                    className="group flex flex-col space-y-6 w-full xl:max-w-2xl 2xl:max-w-5xl"
+                    className="group flex flex-col space-y-6 w-full"
                   >
                     <a
                       href={project.html_url}
