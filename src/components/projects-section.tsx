@@ -160,12 +160,12 @@ export default function Projects({
                       </pre>
 
                       {/* Label indicating it continues on github */}
-                      <span className="absolute bottom-4 left-6 sm:left-8 opacity-50 tracking-tighter lowercase group-hover:opacity-100 transition-opacity italic">
+                      <span className="absolute bottom-4 left-6 sm:left-8 opacity-80 tracking-tighter lowercase group-hover:opacity-100 transition-opacity italic">
                         ...continue reading on github
                       </span>
 
                       {/* Watermark of the file name in the bottom right corner */}
-                      <span className="absolute bottom-4 right-6 sm:right-8 opacity-50 tracking-tighter lowercase group-hover:opacity-100 transition-opacity">
+                      <span className="absolute bottom-4 right-6 sm:right-8 opacity-80 tracking-tighter lowercase group-hover:opacity-100 transition-opacity">
                         {pseudoName}
                       </span>
                     </a>
