@@ -8,26 +8,24 @@ const PROJECTS_DATA = [
     id: "umbrella-records",
     name: "umbrella-records",
     html_url: "https://github.com/karelbrr/umbrella-records",
-    description: "A modern recording studio and online beat store platform.",
-    updated_at: "2023-08-01T00:00:00Z",
+    description: "A modern web platform for a recording studio and an online beat store.",
+    updated_at: "2026-08-01T00:00:00Z",
     readme: "",
   },
   {
     id: "react-twuzzy",
     name: "react-twuzzy",
     html_url: "https://github.com/karelbrr/react-twuzzy",
-    description:
-      "A real-time chat application built with React and Supabase. It includes 1-on-1 messaging, group chats, media sharing, and customizable profiles.",
-    updated_at: "2024-01-01T00:00:00Z",
+    description: "A real-time chat application featuring 1-on-1 and group chat messaging.",
+    updated_at: "2025-01-01T00:00:00Z",
     readme: "",
   },
   {
     id: "diagram-app",
     name: "diagram-app",
     html_url: "https://github.com/karelbrr/diagram-app",
-    description:
-      "A modern web application for creating, editing, and managing diagrams.",
-    updated_at: "2024-05-01T00:00:00Z",
+    description: "A modern web application for creating, editing, and managing diagrams.",
+    updated_at: "2026-05-01T00:00:00Z",
     readme: "",
   },
 ];
@@ -43,8 +41,10 @@ function GithubReadme({
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Fetch from GitHub
-    fetch(`https://raw.githubusercontent.com/karelbrr/${repo}/main/README.md`)
+    // Fetch from GitHub with no-store to avoid browser caching stale versions
+    fetch(`https://raw.githubusercontent.com/karelbrr/${repo}/main/README.md`, {
+      cache: "no-store",
+    })
       .then((res) => {
         if (!res.ok) throw new Error("Not found on main");
         return res.text();
@@ -52,6 +52,7 @@ function GithubReadme({
       .catch(() => {
         return fetch(
           `https://raw.githubusercontent.com/karelbrr/${repo}/master/README.md`,
+          { cache: "no-store" },
         ).then((res) => {
           if (!res.ok) throw new Error("Not found on master");
           return res.text();
@@ -100,7 +101,7 @@ export default function Projects({
         <div className="xl:hidden w-full bg-[#0D0DFF] py-12 flex items-center justify-center border-t border-b border-white/20 mt-12">
           <h2 className="text-6xl italic text-white tracking-tighter lowercase">
             projects
-           </h2>
+          </h2>
         </div>
 
         {/* Left Half of Panel: Sticky Heading */}
