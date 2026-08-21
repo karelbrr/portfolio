@@ -12,7 +12,7 @@ const createTestQueryClient = () => new QueryClient({
   },
 });
 
-export function renderWithClient(ui: React.ReactElement) {
+export function renderWithClient(p0: React.JSX.Element) {
   const testQueryClient = createTestQueryClient();
   const { rerender, ...result } = renderHook(() => useGithubProjects('karelbrr'), {
     wrapper: ({ children }) => (

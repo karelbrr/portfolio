@@ -31,7 +31,7 @@ export function useGithubProjects(username: string) {
       const data: GithubRepo[] = await response.json();
 
       // Filter out forked repositories (you usually only want to show your original work)
-      let filteredRepos = data.filter((repo) => !repo.fork);
+      const filteredRepos = data.filter((repo) => !repo.fork);
 
       // OPTIONAL: Filter by a specific topic.
       // If you add the topic "portfolio" to a repo on GitHub, only those will show up!

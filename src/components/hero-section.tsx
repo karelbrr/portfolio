@@ -1,6 +1,4 @@
 "use client";
-import Link from "next/link";
-
 import { useEffect, useState } from "react";
 
 export default function Hero() {
@@ -12,6 +10,7 @@ export default function Hero() {
       typeof window !== "undefined" &&
       navigator.userAgent.toUpperCase().includes("MAC");
     if (isMac) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setAltKeyName("OPTION");
     }
 

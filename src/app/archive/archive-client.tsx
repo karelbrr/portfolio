@@ -62,6 +62,7 @@ export default function ArchiveClient() {
 
       {/* 1/4 Image Section */}
       <div className="w-full xl:w-[40%] h-[50vh] xl:h-screen border-t xl:border-t-0 xl:border-l border-[#0000FF]/20 relative bg-white shrink-0">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="https://www.nookandfind.co.uk/wp-content/uploads/2020/01/this-is-a-mid-century-modern-home-using-dark-grey.jpg"
           alt="Archive Cover"
