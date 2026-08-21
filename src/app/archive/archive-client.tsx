@@ -19,7 +19,7 @@ export default function ArchiveClient() {
             href="/"
             className="text-2xl sm:text-3xl hover:opacity-70 transition-opacity tracking-tighter lowercase italic"
           >
-            ← back to main
+            {/* ← back to main */}
           </Link>
         </div>
 
