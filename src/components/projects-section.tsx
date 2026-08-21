@@ -5,20 +5,20 @@ import { useEffect, useState } from "react";
 
 const PROJECTS_DATA = [
   {
+    id: "umbrella-records",
+    name: "umbrella-records",
+    html_url: "https://github.com/karelbrr/umbrella-records",
+    description: "A modern recording studio and online beat store platform.",
+    updated_at: "2023-08-01T00:00:00Z",
+    readme: "",
+  },
+  {
     id: "react-twuzzy",
     name: "react-twuzzy",
     html_url: "https://github.com/karelbrr/react-twuzzy",
     description:
       "A real-time chat application built with React and Supabase. It includes 1-on-1 messaging, group chats, media sharing, and customizable profiles.",
     updated_at: "2024-01-01T00:00:00Z",
-    readme: "",
-  },
-  {
-    id: "umbrella-records",
-    name: "umbrella-records",
-    html_url: "https://github.com/karelbrr/umbrella-records",
-    description: "A modern recording studio and online beat store platform.",
-    updated_at: "2023-08-01T00:00:00Z",
     readme: "",
   },
   {
