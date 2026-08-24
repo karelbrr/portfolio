@@ -11,6 +11,21 @@ const ebGaramond = EB_Garamond({
 export const metadata: Metadata = {
   title: "Karel Braborec | Frontend Developer",
   description: "Portfolio of Karel Braborec, Frontend Developer",
+  openGraph: {
+    title: "Karel Braborec | Frontend Developer",
+    description: "Portfolio of Karel Braborec, Frontend Developer",
+    url: "https://karelbraborec.com",
+    siteName: "Karel Braborec",
+    images: [
+      {
+        url: "https://karelbraborec.com/api/og.jpeg",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: "cs_CZ",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
