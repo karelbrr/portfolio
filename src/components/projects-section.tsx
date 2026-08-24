@@ -30,6 +30,15 @@ const PROJECTS_DATA = [
   },
 ];
 
+export const EXPERIENCE_DATA = [
+  {
+    id: "exp-1",
+    role: "junior frontend developer",
+    company: "kedify",
+    description: "Led the development of a modern web platform using Next.js and React. Improved performance by 40% and mentored junior developers.",
+    duration: "june 2025 - nov 2025",
+  },
+];
 function GithubReadme({
   repo,
   fallbackReadme,
