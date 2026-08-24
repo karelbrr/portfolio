@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     siteName: "Karel Braborec",
     images: [
       {
-        url: "https://karelbraborec.com/api/og.jpeg",
+        url: "https://karelbraborec.com/api/og.jpg",
         width: 1200,
         height: 630,
       },
