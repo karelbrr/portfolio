@@ -59,18 +59,20 @@ export default function ExperienceSection({
             {EXPERIENCE_DATA.map((exp, idx) => (
               <div
                 key={idx}
-                className="flex flex-col  border-b-2 border-white/30 pb-16"
+                className="flex flex-col space-y-6 border-b-2 border-white/30 pb-16"
               >
-                <span className="text-x mb-3 lg:text-2xl opacity-80">
+                <span className="text-xl lg:text-3xl font-mono opacity-80">
                   {exp.duration}
                 </span>
-                <h3 className="text-5xl mb-5 lg:text-6xl 2xl:text-7xl tracking-tighter lowercase leading-none">
-                  {exp.role} <br />
-                </h3>
-                <p className="mb-5 text-2xl lg:text-5xl 2xl:text-6xl tracking-tighter lowercase">
-                  <span className="opacity-80">@ {exp.company}</span>
-                </p>
-                <p className="text-xl lg:text-2xl opacity-80 max-w-2xl">
+                <div className="flex flex-col">
+                  <h3 className="text-5xl lg:text-6xl 2xl:text-8xl italic tracking-tighter lowercase leading-[0.9]">
+                    {exp.role}
+                  </h3>
+                  <p className="text-3xl lg:text-4xl 2xl:text-5xl tracking-tighter lowercase opacity-80 mt-2 xl:mt-4">
+                    @ {exp.company}
+                  </p>
+                </div>
+                <p className="text-xl lg:text-2xl opacity-90 max-w-2xl leading-snug">
                   {exp.description}
                 </p>
               </div>
