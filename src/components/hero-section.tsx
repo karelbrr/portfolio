@@ -62,7 +62,7 @@ export default function Hero() {
       {/* Center/Right Content */}
       <div className="xl:col-span-7 xl:col-start-6 flex flex-col h-[70%] justify-center space-y-8 sm:space-y-16 sm:mt-16 xl:mt-32 2xl:mt-48 z-10">
         <div className="text-4xl sm:text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-white leading-[1.1] sm:leading-snug tracking-tighter lowercase max-w-xl 2xl:max-w-3xl">
-          frontend developer crafting intelligent, high-performance web
+          19-year-old frontend developer crafting intelligent, high-performance web
           experiences. <br />
           <br />
           <span className="font-medium">
