@@ -44,7 +44,7 @@ export default function ContactFooter() {
 
       <div className="w-full flex justify-between items-end mt-24 text-lg sm:text-2xl font-mono tracking-tighter lowercase border-t-2 border-[#0000FF] pt-4 sm:pt-6">
         <span>© {new Date().getFullYear()} Karel Braborec</span>
-        <span>end of file.</span>
+        <span>Maybeeee I don't really wanna know...</span>
       </div>
     </footer>
   );
