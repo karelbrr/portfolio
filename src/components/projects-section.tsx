@@ -30,6 +30,15 @@ const PROJECTS_DATA = [
   },
 ];
 
+export const EXPERIENCE_DATA = [
+  {
+    id: "exp-1",
+    role: "junior frontend developer",
+    company: "kedify",
+    description: "Maintained and developed the main marketing website using Astro.",
+    duration: "june 2025 - nov 2025",
+  },
+];
 function GithubReadme({
   repo,
   fallbackReadme,

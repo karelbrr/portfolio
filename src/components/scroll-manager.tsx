@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Hero from "@/components/hero-section";
 import Projects from "@/components/projects-section";
-import Contact from "@/components/contact-section";
+import ExperienceSection from "@/components/experience-section";
 
 export default function ScrollManager() {
   const containerRef = useRef<HTMLElement>(null);
@@ -31,20 +31,19 @@ export default function ScrollManager() {
     };
   }, []);
 
-  // Phase 1 (0% to 15%): Horizontal Slide (Projects)
-  const horizontalProgress = Math.min(scrollProgress / 0.15, 1);
+  // Phase 1 (0% to 12%): Horizontal Slide (Projects)
+  const horizontalProgress = Math.min(scrollProgress / 0.12, 1);
 
-  // Phase 2 (20% to 75%): Vertical Scroll (Projects)
-  // Leaves a 5% scroll deadzone before scrolling down begins
+  // Phase 2 (16% to 75%): Vertical Scroll (Projects)
   const verticalProgress = Math.min(
-    Math.max((scrollProgress - 0.2) / 0.55, 0),
+    Math.max((scrollProgress - 0.16) / 0.59, 0),
     1,
   );
 
-  // Phase 3 (85% to 100%): Horizontal Slide (Contact)
-  // Leaves a massive 10% scroll deadzone before Contact slides in
-  const contactHorizontalProgress = Math.min(
-    Math.max((scrollProgress - 0.85) / 0.15, 0),
+  // Phase 3 (80% to 90%): Horizontal Slide (Experience)
+  // We leave a 10% deadzone at the end (90% to 100%) as a scroll barrier before the footer appears
+  const experienceHorizontalProgress = Math.min(
+    Math.max((scrollProgress - 0.8) / 0.1, 0),
     1,
   );
 
@@ -62,7 +61,7 @@ export default function ScrollManager() {
             horizontalProgress={horizontalProgress}
             verticalProgress={verticalProgress}
           />
-          <Contact contactHorizontalProgress={contactHorizontalProgress} />
+          <ExperienceSection experienceHorizontalProgress={experienceHorizontalProgress} />
         </div>
       </section>
     </main>

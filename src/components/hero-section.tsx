@@ -53,7 +53,7 @@ export default function Hero() {
   return (
     <div className="relative xl:absolute xl:inset-0 p-6 sm:p-12 grid grid-cols-1 xl:grid-cols-12 gap-8 z-0 min-h-screen xl:min-h-0">
       {/* Top / Mobile Header: Logo & Title */}
-      <div className="xl:col-span-3 xl:col-start-1 flex flex-row xl:flex-col  items-start xl:h-[calc(100vh-6rem)] w-full">
+      <div className="xl:col-span-3 xl:col-start-1 flex flex-col items-start xl:h-[calc(100vh-6rem)] w-full">
         <h2 className="text-2xl tracking-tighter sm:text-4xl 2xl:text-6xl leading-[0.85] whitespace-nowrap z-10">
           <span className="mr-1">Karel </span>Braborec
         </h2>
@@ -62,7 +62,7 @@ export default function Hero() {
       {/* Center/Right Content */}
       <div className="xl:col-span-7 xl:col-start-6 flex flex-col h-[70%] justify-center space-y-8 sm:space-y-16 sm:mt-16 xl:mt-32 2xl:mt-48 z-10">
         <div className="text-4xl sm:text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-white leading-[1.1] sm:leading-snug tracking-tighter lowercase max-w-xl 2xl:max-w-3xl">
-          frontend developer crafting intelligent, high-performance web
+          19-year-old frontend developer crafting intelligent, high-performance web
           experiences. <br />
           <br />
           <span className="font-medium">
