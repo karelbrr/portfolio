@@ -35,7 +35,7 @@ export const EXPERIENCE_DATA = [
     id: "exp-1",
     role: "junior frontend developer",
     company: "kedify",
-    description: "Led the development of a modern web platform using Next.js and React. Improved performance by 40% and mentored junior developers.",
+    description: "Maintained and developed the main marketing website using Astro.",
     duration: "june 2025 - nov 2025",
   },
 ];
