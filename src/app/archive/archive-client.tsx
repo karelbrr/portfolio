@@ -54,7 +54,12 @@ export default function ArchiveClient() {
                     {String(idx + 1).padStart(2, "0")}
                   </span>
                   <div className="flex flex-col">
-                    <a href={repo.html_url} target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity w-fit">
+                    <a
+                      href={repo.html_url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:opacity-70 transition-opacity w-fit"
+                    >
                       <h2 className="text-3xl sm:text-5xl leading-none tracking-tighter lowercase italic">
                         {repo.name.replace(/-/g, " ")}
                       </h2>
@@ -77,8 +82,13 @@ export default function ArchiveClient() {
                   {/* 3. Live URL */}
                   <div className="w-1/3 xl:w-[41.6%] flex flex-col xl:pt-2 items-center xl:items-start text-center xl:text-left">
                     {repo.live_url ? (
-                      <a href={repo.live_url} target="_blank" rel="noopener noreferrer" className="text-base sm:text-2xl tracking-tighter lowercase italic hover:opacity-70 transition-opacity flex items-center justify-center xl:justify-start gap-1 w-full xl:w-fit">
-                        {repo.live_url.replace(/^https?:\/\//, '')}
+                      <a
+                        href={repo.live_url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-base sm:text-2xl tracking-tighter lowercase italic hover:opacity-70 transition-opacity flex items-center justify-center xl:justify-start gap-1 w-full xl:w-fit"
+                      >
+                        {repo.live_url.replace(/^https?:\/\//, "")}
                         <span className="text-xs sm:text-sm opacity-50">↗</span>
                       </a>
                     ) : (

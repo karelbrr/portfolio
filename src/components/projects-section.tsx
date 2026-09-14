@@ -8,7 +8,8 @@ const PROJECTS_DATA = [
     id: "umbrella-records",
     name: "umbrella-records",
     html_url: "https://github.com/karelbrr/umbrella-records",
-    description: "A modern web platform for a recording studio and an online beat store.",
+    description:
+      "A modern web platform for a recording studio and an online beat store.",
     updated_at: "2026-08-01T00:00:00Z",
     readme: "",
   },
@@ -16,7 +17,8 @@ const PROJECTS_DATA = [
     id: "react-twuzzy",
     name: "react-twuzzy",
     html_url: "https://github.com/karelbrr/react-twuzzy",
-    description: "A real-time chat application featuring 1-on-1 and group chat messaging.",
+    description:
+      "A real-time chat application featuring 1-on-1 and group chat messaging.",
     updated_at: "2025-01-01T00:00:00Z",
     readme: "",
   },
@@ -24,12 +26,12 @@ const PROJECTS_DATA = [
     id: "diagram-app",
     name: "diagram-app",
     html_url: "https://github.com/karelbrr/diagram-app",
-    description: "A modern web application for creating, editing, and managing diagrams.",
+    description:
+      "A modern web application for creating, editing, and managing diagrams.",
     updated_at: "2026-05-01T00:00:00Z",
     readme: "",
   },
 ];
-
 
 function GithubReadme({
   repo,

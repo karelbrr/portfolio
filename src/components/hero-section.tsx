@@ -62,8 +62,8 @@ export default function Hero() {
       {/* Center/Right Content */}
       <div className="xl:col-span-7 xl:col-start-6 flex flex-col h-[70%] justify-center space-y-8 sm:space-y-16 sm:mt-16 xl:mt-32 2xl:mt-48 z-10">
         <div className="text-4xl sm:text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-white leading-[1.1] sm:leading-snug tracking-tighter lowercase max-w-xl 2xl:max-w-3xl">
-          19-year-old frontend developer crafting intelligent, high-performance web
-up <br />
+          19-year-old frontend developer crafting intelligent, high-performance
+          web up <br />
           <br />
           <span className="font-medium">
             react.js & next.js, typescript, and python & AI integrations.
@@ -85,7 +85,10 @@ up <br />
 
       {/* Floating Navigation */}
       <div className="absolute top-6 sm:top-12 2xl:top-16 italic right-6 sm:right-12 2xl:right-16 tracking-tighter lowercase text-lg sm:text-2xl 2xl:text-3xl font-medium z-20">
-        <a href="/archive" className="block transition-opacity hover:underline underline-offset-8 cursor-pointer">
+        <a
+          href="/archive"
+          className="block transition-opacity hover:underline underline-offset-8 cursor-pointer"
+        >
           archive
         </a>
       </div>

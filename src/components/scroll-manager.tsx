@@ -61,7 +61,9 @@ export default function ScrollManager() {
             horizontalProgress={horizontalProgress}
             verticalProgress={verticalProgress}
           />
-          <ExperienceSection experienceHorizontalProgress={experienceHorizontalProgress} />
+          <ExperienceSection
+            experienceHorizontalProgress={experienceHorizontalProgress}
+          />
         </div>
       </section>
     </main>
