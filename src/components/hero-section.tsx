@@ -72,9 +72,9 @@ up <br />
 
         <div className="flex flex-col space-y-2 sm:space-y-4 2xl:space-y-6 text-lg sm:text-2xl 2xl:text-3xl italic tracking-tighter lowercase w-fit">
           <div className="flex items-center space-x-3 mb-2 sm:mb-4 2xl:mb-6">
-            <span className="px-1 bg-[#ffb300] text-[#0000FF] selection:bg-[#0000FF] selection:text-white">
+            {/* <span className="px-1 bg-[#ffb300] text-[#0000FF] selection:bg-[#0000FF] selection:text-white">
               * currently open to new work position.
-            </span>
+            </span> */}
           </div>
           <p>* scroll down to view recent projects.</p>
           <p className="hidden sm:block">
@@ -84,8 +84,8 @@ up <br />
       </div>
 
       {/* Floating Navigation */}
-      <div className="hidden xl:block absolute top-6 sm:top-12 2xl:top-16 italic right-6 sm:right-12 2xl:right-16 tracking-tighter lowercase text-lg sm:text-2xl 2xl:text-3xl font-medium z-20">
-        <a className="block transition-opacity hover:underline underline-offset-8 cursor-pointer">
+      <div className="absolute top-6 sm:top-12 2xl:top-16 italic right-6 sm:right-12 2xl:right-16 tracking-tighter lowercase text-lg sm:text-2xl 2xl:text-3xl font-medium z-20">
+        <a href="/archive" className="block transition-opacity hover:underline underline-offset-8 cursor-pointer">
           archive
         </a>
       </div>
