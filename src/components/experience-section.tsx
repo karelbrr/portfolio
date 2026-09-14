@@ -1,5 +1,3 @@
-import { EXPERIENCE_DATA } from "@/components/projects-section";
-
 interface ExperienceProps {
   experienceHorizontalProgress: number;
 }
@@ -7,6 +5,24 @@ interface ExperienceProps {
 export default function ExperienceSection({
   experienceHorizontalProgress,
 }: ExperienceProps) {
+  const EXPERIENCE_DATA = [
+    {
+      id: "exp-1",
+      role: "junior frontend developer",
+      company: "Kedify",
+      description:
+        "Maintained and developed the main marketing website using Astro.",
+      duration: "june 2025 - nov 2025",
+    },
+    {
+      id: "exp-2",
+      role: "software developer",
+      company: "Incinity",
+      description: "",
+      duration: "september 2026 - present",
+    },
+  ];
+
   return (
     <div className="relative xl:absolute xl:inset-0 z-30 pointer-events-none overflow-hidden flex xl:justify-end">
       {/* Phase 1: Horizontal Translation of the experience panel */}
@@ -54,23 +70,25 @@ export default function ExperienceSection({
         </div>
 
         {/* Right Half of Panel: Content */}
-        <div className="hidden xl:flex w-[50%] h-screen relative overflow-y-auto flex-col px-12 lg:px-16 xl:px-20 py-12 lg:py-16 text-white pb-32">
-          <div className="flex flex-col space-y-24 xl:mt-48 xl:mb-32">
+        <div className="hidden xl:flex w-[50%] h-screen relative overflow-y-auto flex-col justify-center px-12 lg:px-16 xl:px-20 py-12 lg:py-16 text-white">
+          <div className="flex flex-col space-y-24">
             {EXPERIENCE_DATA.map((exp, idx) => (
               <div
                 key={idx}
-                className="flex flex-col  border-b-2 border-white/30 pb-16"
+                className="flex flex-col space-y-6 border-b-2 border-white/30 pb-16"
               >
-                <span className="text-x mb-3 lg:text-2xl opacity-80">
+                <span className="text-xl lg:text-3xl font-mono opacity-80">
                   {exp.duration}
                 </span>
-                <h3 className="text-5xl mb-5 lg:text-6xl 2xl:text-7xl tracking-tighter lowercase leading-none">
-                  {exp.role} <br />
-                </h3>
-                <p className="mb-5 text-2xl lg:text-5xl 2xl:text-6xl tracking-tighter lowercase">
-                  <span className="opacity-80">@ {exp.company}</span>
-                </p>
-                <p className="text-xl lg:text-2xl opacity-80 max-w-2xl">
+                <div className="flex flex-col">
+                  <h3 className="text-5xl lg:text-6xl 2xl:text-8xl italic tracking-tighter lowercase leading-[0.9]">
+                    {exp.role}
+                  </h3>
+                  <p className="text-3xl lg:text-4xl 2xl:text-5xl tracking-tighter lowercase opacity-80 mt-2 xl:mt-4">
+                    @ {exp.company}
+                  </p>
+                </div>
+                <p className="text-xl lg:text-2xl opacity-90 max-w-2xl leading-snug">
                   {exp.description}
                 </p>
               </div>

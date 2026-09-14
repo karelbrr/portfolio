@@ -63,7 +63,7 @@ export default function Hero() {
       <div className="xl:col-span-7 xl:col-start-6 flex flex-col h-[70%] justify-center space-y-8 sm:space-y-16 sm:mt-16 xl:mt-32 2xl:mt-48 z-10">
         <div className="text-4xl sm:text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-white leading-[1.1] sm:leading-snug tracking-tighter lowercase max-w-xl 2xl:max-w-3xl">
           19-year-old frontend developer crafting intelligent, high-performance web
-          experiences. <br />
+up <br />
           <br />
           <span className="font-medium">
             react.js & next.js, typescript, and python & AI integrations.
@@ -72,9 +72,9 @@ export default function Hero() {
 
         <div className="flex flex-col space-y-2 sm:space-y-4 2xl:space-y-6 text-lg sm:text-2xl 2xl:text-3xl italic tracking-tighter lowercase w-fit">
           <div className="flex items-center space-x-3 mb-2 sm:mb-4 2xl:mb-6">
-            <span className="px-1 bg-[#ffb300] text-[#0000FF] selection:bg-[#0000FF] selection:text-white">
+            {/* <span className="px-1 bg-[#ffb300] text-[#0000FF] selection:bg-[#0000FF] selection:text-white">
               * currently open to new work position.
-            </span>
+            </span> */}
           </div>
           <p>* scroll down to view recent projects.</p>
           <p className="hidden sm:block">
@@ -84,8 +84,8 @@ export default function Hero() {
       </div>
 
       {/* Floating Navigation */}
-      <div className="hidden xl:block absolute top-6 sm:top-12 2xl:top-16 italic right-6 sm:right-12 2xl:right-16 tracking-tighter lowercase text-lg sm:text-2xl 2xl:text-3xl font-medium z-20">
-        <a className="block transition-opacity hover:underline underline-offset-8 cursor-pointer">
+      <div className="absolute top-6 sm:top-12 2xl:top-16 italic right-6 sm:right-12 2xl:right-16 tracking-tighter lowercase text-lg sm:text-2xl 2xl:text-3xl font-medium z-20">
+        <a href="/archive" className="block transition-opacity hover:underline underline-offset-8 cursor-pointer">
           archive
         </a>
       </div>
